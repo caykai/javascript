@@ -1,0 +1,13 @@
+<html>
+	<body style="background-color:darkblue">
+		<img id="ghost" style="position:absolute;" src="1-2-ghost-png-pic.png">
+		<img id="ghost" style="position:absolute;width:100px; top:500px; left:500px;">
+	</body>
+	<script>
+		var timer=window.setInterval(moveGhost,1000);
+		function moveGhost(){
+			document.getElementById("ghost").style.left=Math.random()*900+"px";
+			document.getElementById("ghost").style.top=Math.random()*600+"px";
+		}
+		</script>
+	</html>
